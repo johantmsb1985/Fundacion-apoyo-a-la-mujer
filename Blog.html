@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta name="description" content="Fundación dedicada al empoderamiento y seguridad jurídica de la mujer en Colombia. Proyecto Impacto Rosa.">
+	<meta property="og:title" content="Fundación - Transformando Realidades">
+	<meta property="og:description" content="Apoya nuestras causas y conoce el proyecto Impacto Rosa.">
+	<meta property="og:image" content="https://tu-enlace.vercel.app/logo-fundacion.jpg"> <meta property="og:type" content="website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog y Transparencia - Fundación</title>
+    <title>Fundación - Sitio Institucional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
     <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">FUNDACIÓN</a>
-            <button id="menu-btn" class="block md:hidden text-gray-600 focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-            <div id="menu" class="hidden absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none flex-col md:flex-row md:flex items-center space-y-4 md:space-y-0 md:space-x-6 p-6 md:p-0">
-                <a href="index.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Inicio</a>
-                <a href="Nosotros.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Nosotros</a>
-                <a href="Proyectos.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Proyectos</a>
-                <a href="blog.html" class="text-blue-600 font-bold w-full text-center md:w-auto">Blog</a>
-                <a href="Contacto.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 w-full text-center md:w-auto">Donar</a>
-            </div>
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">FUNDACIÓN</a>
+
+        <button id="menu-btn" class="block md:hidden text-gray-600 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <div id="menu" class="hidden absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none flex-col md:flex-row md:flex items-center space-y-4 md:space-y-0 md:space-x-6 p-6 md:p-0 transition-all duration-300">
+            <a href="index.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Inicio</a>
+            <a href="Nosotros.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Nosotros</a>
+            <a href="Proyectos.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Proyectos</a>
+			<a href="Contacto.html" class="hover:text-blue-500font-medium w-full text-center md:w-auto">Contacto</a>
+            <a href="Blog.html" class="hover:text-blue-500 font-medium w-full text-center md:w-auto">Blog</a>
+            <a href="index.html#donar" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 w-full text-center md:w-auto">Donar</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+    });
+</script>
 
     <header class="bg-blue-900 py-16 text-white text-center">
         <div class="container mx-auto px-4">
