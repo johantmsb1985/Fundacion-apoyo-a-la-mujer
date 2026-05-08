@@ -8,12 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .text-brand-blue { color: #1E3A8A; } /* Azul Autoridad */
-        .bg-brand-pink { background-color: #DB2777; } /* Rosa Empoderamiento */
-        .text-brand-pink { color: #DB2777; }
-        .hover-brand-pink:hover { background-color: #BE185D; }
-        .bg-brand-blue { background-color: #1E3A8A; }
+    body { font-family: 'Inter', sans-serif; }
+    .text-brand-blue { color: #1E3A8A; }
+    .bg-brand-blue { background-color: #1E3A8A; }
+    .bg-brand-pink { background-color: #DB2777; }
+    
+    /* Esta regla fuerza que cualquier cosa con text-brand-blue cambie correctamente */
+    .hover-blue-fix:hover {
+        color: #1E3A8A !important;
+        background-color: white !important;
+    }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
