@@ -11,47 +11,37 @@
         body { font-family: 'Inter', sans-serif; }
         .text-brand-blue { color: #1E3A8A; } /* Azul Autoridad */
         .bg-brand-pink { background-color: #DB2777; } /* Rosa Empoderamiento */
+        .text-brand-pink { color: #DB2777; }
         .hover-brand-pink:hover { background-color: #BE185D; }
-        .bg-brand-light { background-color: #FDF2F8; } /* Fondo Rosa muy suave */
+        .bg-brand-blue { background-color: #1E3A8A; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
     <nav class="bg-white shadow-sm p-4 sticky top-0 z-50 border-b border-pink-100">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-extrabold text-brand-blue tracking-tighter">
-            FUNDACIÓN<span class="text-pink-600">.</span>
-        </a>
-        
-        <button id="menu-btn" class="block md:hidden text-brand-blue focus:outline-none p-2">
-            <i class="fa-solid fa-bars-staggered text-2xl"></i>
-        </button>
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-brand-blue tracking-tighter uppercase">
+                Fundación<span class="text-brand-pink">.</span>
+            </a>
+            
+            <button id="menu-btn" class="block md:hidden text-brand-blue focus:outline-none p-2">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
 
-        <div id="menu" class="hidden absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-xl md:shadow-none flex-col md:flex-row md:flex items-center space-y-4 md:space-y-0 md:space-x-8 p-8 md:p-0 border-t md:border-none border-pink-50">
-            <a href="index.html" class="text-gray-600 hover:text-pink-600 font-semibold transition w-full text-center md:w-auto">Inicio</a>
-            <a href="Nosotros.html" class="text-gray-600 hover:text-pink-600 font-semibold transition w-full text-center md:w-auto">Nosotros</a>
-            <a href="Proyectos.html" class="text-gray-600 hover:text-pink-600 font-semibold transition w-full text-center md:w-auto">Proyectos</a>
-            <a href="Blog.html" class="text-gray-600 hover:text-pink-600 font-semibold transition w-full text-center md:w-auto">Blog</a>
-            <a href="Contacto.html" class="hover:text-blue-500font-medium w-full text-center md:w-auto">Contacto</a>
-			<a href="index.html#donar" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 w-full text-center md:w-auto">Donar</a>
+            <div id="menu" class="hidden absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-xl md:shadow-none flex-col md:flex-row md:flex items-center space-y-4 md:space-y-0 md:space-x-8 p-8 md:p-0">
+                <a href="index.html" class="text-gray-600 hover:text-brand-pink font-semibold transition w-full text-center md:w-auto">Inicio</a>
+                <a href="Nosotros.html" class="text-gray-600 hover:text-brand-pink font-semibold transition w-full text-center md:w-auto">Nosotros</a>
+                <a href="Proyectos.html" class="text-gray-600 hover:text-brand-pink font-semibold transition w-full text-center md:w-auto">Proyectos</a>
+                <a href="Blog.html" class="text-gray-600 hover:text-brand-pink font-semibold transition w-full text-center md:w-auto">Blog</a>
+                <a href="Contacto.html" class="text-gray-600 hover:text-brand-pink font-semibold transition w-full text-center md:w-auto">Contacto</a>
+                <a href="index.html#donar" class="bg-brand-pink text-white px-6 py-2.5 rounded-full font-bold hover-brand-pink transition shadow-md w-full text-center md:w-auto">
+                    Donar <i class="fa-solid fa-heart ml-1"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<script>
-    // Seleccionamos el botón y el menú por sus IDs
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-
-    // Escuchamos el clic/toque en el botón
-    btn.addEventListener('click', () => {
-        // 'toggle' quita la clase si está, o la pone si no está
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('flex');
-    });
-</script>
-
-<header class="relative bg-brand-blue py-24 overflow-hidden">
+    <header class="relative bg-brand-blue py-20 md:py-32 overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-pink-500 opacity-10 rounded-full -mr-20 -mt-20"></div>
         
         <div class="container mx-auto px-4 relative z-10">
@@ -59,20 +49,30 @@
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
                     Seguridad Jurídica para el <span class="text-pink-400">Progreso de la Mujer.</span>
                 </h1>
-                <p class="text-xl text-blue-100 mb-10 leading-relaxed">
+                <p class="text-xl text-blue-100 mb-10 leading-relaxed opacity-90">
                     Transformamos vidas a través del empoderamiento legal y el acompañamiento integral. Tu apoyo garantiza que ninguna mujer camine sola.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#donar" class="bg-brand-pink text-white px-10 py-4 rounded-full font-extrabold text-lg shadow-lg hover-brand-pink transition text-center">
                         Quiero Apoyar
                     </a>
-                    <a href="proyectos.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-extrabold text-lg hover:bg-white hover:text-brand-blue transition text-center">
+                    <a href="Proyectos.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-extrabold text-lg hover:bg-white hover:text-brand-blue transition text-center">
                         Ver Impacto Rosa
                     </a>
                 </div>
             </div>
         </div>
-</header>
+    </header>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
 
     <main class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
